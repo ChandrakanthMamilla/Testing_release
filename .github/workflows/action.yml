@@ -16,6 +16,7 @@ jobs:
       - name: "Build & test"
         run: |
           echo "done!"
+      - uses: actions/checkout@v2
       - uses: "ChandrakanthMamilla/Testing_release@latest"
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
